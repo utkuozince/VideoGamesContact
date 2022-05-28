@@ -5386,6 +5386,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ["games"],
   data: function data() {
@@ -10648,7 +10655,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nnav[data-v-147fb424] {\n margin: 40px;\n padding-left: 150px;\n font-weight: bolder;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nnav[data-v-147fb424] {\n  margin: 40px;\n  padding-left: 150px;\n  font-weight: bolder;\n}\n.navbar-brand[data-v-147fb424]{\n     color: #ffff;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10672,7 +10679,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nh5[data-v-4c2584f6] {\n  font-weight: bolder;\n}\nh6[data-v-4c2584f6],label[data-v-4c2584f6] {\n  font-weight: bolder;\n}\nspan[data-v-4c2584f6] {\n  color: blue;\n}\narticle[data-v-4c2584f6]{\n    padding-bottom: 40px;\n}\n.get-in[data-v-4c2584f6]{\n    /* margin-left: 200px;\n    margin-right: 200px;\n    margin-top: 50px;\n    margin-bottom: 50px; */\n    width:50%;\n    align-items: center;\n    justify-content: center;\n}\n.contact-form[data-v-4c2584f6]{\n    margin-left: 8px;\n    margin-right: 8px;\n    margin-bottom: 6px;\n    margin-top: 6px;\n}\n.messages[data-v-4c2584f6]{\n    padding-top: 15px;\n    padding-bottom: 10px;\n}\n.contact[data-v-4c2584f6]{\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nh5[data-v-4c2584f6] {\n  font-weight: bolder;\n}\nh6[data-v-4c2584f6],label[data-v-4c2584f6] {\n  font-weight: bolder;\n}\narticle[data-v-4c2584f6]{\n    padding-bottom: 40px;\n}\n.get-in[data-v-4c2584f6]{\n    /* margin-left: 200px;\n    margin-right: 200px;\n    margin-top: 50px;\n    margin-bottom: 50px; */\n    width:50%;\n    align-items: center;\n    justify-content: center;\n}\n.contact-form[data-v-4c2584f6]{\n    margin-left: 8px;\n    margin-right: 8px;\n    margin-bottom: 6px;\n    margin-top: 6px;\n}\n.messages[data-v-4c2584f6]{\n    padding-top: 15px;\n    padding-bottom: 10px;\n}\n.contact[data-v-4c2584f6]{\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -10720,7 +10727,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.card[data-v-52f594c3] {\n  margin-bottom: 10px;\n}\nh5[data-v-52f594c3] {\n  font-weight: bolder;\n}\n.white-box[data-v-52f594c3] {\n  border-radius: 20px;\n  background-color: blue;\n  height: 30px;\n  margin: 10px;\n  padding: 10px;\n  position: absolute;\n  right: 10px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.card[data-v-52f594c3] {\n  margin-bottom: 10px;\n}\n.imgfield[data-v-52f594c3]{\n    background-color: black;\n}\nh5[data-v-52f594c3] {\n  font-weight: bolder;\n}\n.sumrating[data-v-52f594c3] {\n  display: flex;\n}\nbutton[data-v-52f594c3] {\n  border-radius: 50%;\n  height: 45px;\n  min-width: 45px;\n  float: right;\n  position: static;\n  padding: 8px;\n  margin: 15px;\n  font-size: 1.1rem;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -50685,7 +50692,7 @@ var render = function () {
       "nav",
       {
         staticClass:
-          "navbar bg-white navbar-light d-flex justify-content-start",
+          "navbar bg-custom navbar-light d-flex justify-content-start",
       },
       [
         _c(
@@ -50806,10 +50813,7 @@ var staticRenderFns = [
                 [
                   _c(
                     "button",
-                    {
-                      staticClass: "btn btn-primary btn-sm",
-                      attrs: { type: "button" },
-                    },
+                    { staticClass: "btn-sm", attrs: { type: "button" } },
                     [_vm._v("Send")]
                   ),
                 ]
@@ -50961,7 +50965,7 @@ var render = function () {
             _c(
               "button",
               {
-                staticClass: "btn btn-primary btn-sm",
+                staticClass: "btn-sm",
                 attrs: { type: "button" },
                 on: { click: _vm.emitFilterClear },
               },
@@ -51011,25 +51015,38 @@ var render = function () {
     _vm._l(_vm.games, function (game, index) {
       return _c("div", { key: index }, [
         _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-body" }, [
-            _c("h5", [_vm._v(_vm._s(game.name))]),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "imgfield col-md-2" }),
             _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Release Date: " +
-                  _vm._s(_vm._f("dateFormat")(game.first_release_date))
-              ),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "d-flex justify content" }, [
-              _c("article", [_vm._v("[Summary] " + _vm._s(game.summary))]),
-              _vm._v(" "),
-              _c("div", { staticClass: "white-box" }, [
-                _vm._v(
-                  "\n            " +
-                    _vm._s(_vm.roundRating(game.rating)) +
-                    "\n          "
-                ),
+            _c("div", { staticClass: "col-md-10" }, [
+              _c("div", { staticClass: "card-body" }, [
+                _c("h5", [_vm._v(_vm._s(game.name))]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Release Date: " +
+                      _vm._s(_vm._f("dateFormat")(game.first_release_date))
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "d-flex justify-content-between" }, [
+                  _c("article", [_vm._v("[Summary] " + _vm._s(game.summary))]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "deneme",
+                      attrs: { type: "button", disabled: "" },
+                    },
+                    [
+                      _vm._v(
+                        "\n                " +
+                          _vm._s(_vm.roundRating(game.rating)) +
+                          "\n              "
+                      ),
+                    ]
+                  ),
+                ]),
               ]),
             ]),
           ]),

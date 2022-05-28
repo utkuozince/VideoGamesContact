@@ -34,7 +34,7 @@
             ></textarea>
           </div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button type="button" class="btn btn-primary btn-sm">Send</button>
+              <button type="button" class="btn-sm">Send</button>
           </div>
 
         </div>
@@ -55,9 +55,6 @@ h6,label {
   font-weight: bolder;
 }
 
-span {
-  color: blue;
-}
 article{
     padding-bottom: 40px;
 }

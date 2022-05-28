@@ -8,7 +8,15 @@
     <title>Video Games Contact</title>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    {{-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <!-- Styles -->
     <style>
@@ -400,7 +408,72 @@
 
     <style>
         body {
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Mulish', sans-serif;
+            background-image: linear-gradient(#081221, #03080f);
+            color: #c1d1e8;
+
+        }
+
+        .card {
+            background-color: #0e1a2b;
+        }
+
+
+        button {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #5692e8;
+            accent-color: #5692e8;
+            color: #ffff;
+        }
+
+        input[type="text"] {
+            background-color: #182c47;
+            color: #c1d1e8;
+        }
+
+
+        textarea.form-control{
+            background-color: #182c47;
+        }
+
+        .form-control:focus {
+            background-color: #182c47;
+            color: #c1d1e8;
+        }
+
+        .form-control::placeholder {
+            color: #c1d1e8;
+        }
+
+        .form-select {
+            background-color: #182c47;
+            color: #c1d1e8
+        }
+
+
+
+        select {
+            background-color: #182c47;
+        }
+
+        span {
+            color: #5692e8;
+            ;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #ffff;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        label {
+            font-family: 'Montserrat', sans-serif;
+            color: #ffff;
         }
 
     </style>

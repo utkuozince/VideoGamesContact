@@ -47,7 +47,7 @@
           </select>
         </div>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <button @click="emitFilterClear" class="btn btn-primary btn-sm" type="button">Clear</button>
+          <button @click="emitFilterClear" class="btn-sm" type="button">Clear</button>
         </div>
       </div>
     </div>

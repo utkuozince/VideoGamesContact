@@ -2,15 +2,22 @@
   <div class="row">
     <div v-for="(game, index) in games" :key="index">
       <div class="card">
-        <div class="card-body">
-          <h5>{{ game.name }}</h5>
-          <p>Release Date: {{ game.first_release_date | dateFormat }}</p>
+        <div class="row">
+          <div class="imgfield col-md-2">
 
-          <div class="d-flex justify content">
-            <article>[Summary] {{ game.summary }}</article>
+          </div>
+          <div class="col-md-10">
+            <div class="card-body">
+              <h5>{{ game.name }}</h5>
+              <p>Release Date: {{ game.first_release_date | dateFormat }}</p>
 
-            <div class="white-box">
-              {{ roundRating(game.rating) }}
+              <div class="d-flex justify-content-between">
+                <article>[Summary] {{ game.summary }}</article>
+
+                <button class="deneme" type="button" disabled>
+                  {{ roundRating(game.rating) }}
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -44,17 +51,27 @@ export default {
   margin-bottom: 10px;
 }
 
+.imgfield{
+    background-color: black;
+}
+
 h5 {
   font-weight: bolder;
 }
 
-.white-box {
-  border-radius: 20px;
-  background-color: blue;
-  height: 30px;
-  margin: 10px;
-  padding: 10px;
-  position: absolute;
-  right: 10px;
+.sumrating {
+  display: flex;
+}
+
+button {
+  border-radius: 50%;
+  height: 45px;
+  min-width: 45px;
+  float: right;
+  position: static;
+  padding: 8px;
+  margin: 15px;
+  font-size: 1.1rem;
+
 }
 </style>
